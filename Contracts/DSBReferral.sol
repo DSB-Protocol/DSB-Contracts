@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.0;
-
+ 
 interface IBEP20 {
     /**
      * @dev Returns the amount of tokens in existence.
