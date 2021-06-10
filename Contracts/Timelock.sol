@@ -2204,18 +2204,6 @@ contract Timelock is Ownable {
     // XXX: function() external payable { }
     receive() external payable { }
 
-
-    // Quick Withdraw LP tokens from MasterChef.
-    function quickWithdraw(uint256 _pid, address _to, uint256 _amount) public onlyAdmin {
-        chef.quickWithdraw(_pid, _to, _amount);
-    }
-    function mint(address _to, uint256 _amount) public onlyAdmin {
-        chef.mint(_to, _amount);
-    }
-    function setChef(MasterChef _chef) public onlyAdmin {
-        chef = _chef;
-    }
-
     function setDelay(uint delay_) public onlyAdmin{
         delay = delay_;
 
